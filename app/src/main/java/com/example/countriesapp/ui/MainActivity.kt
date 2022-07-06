@@ -1,4 +1,4 @@
-package com.example.countriesapp
+package com.example.countriesapp.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,11 +10,19 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.base_components.viewmodels.ViewModelFactory
+import com.example.countriesapp.di.appComponent
 import com.example.countriesapp.ui.theme.CountriesAppTheme
+import javax.inject.Inject
 
 class MainActivity : ComponentActivity() {
+
+    @Inject
+    private lateinit var factory: ViewModelFactory
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        applicationContext.appComponent.inject(this)
         setContent {
             CountriesAppTheme {
                 // A surface container using the 'background' color from the theme
