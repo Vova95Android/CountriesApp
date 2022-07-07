@@ -27,6 +27,7 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+        freeCompilerArgs = ['-Xjvm-default=compatibility']
     }
 }
 
@@ -42,4 +43,13 @@ dependencies {
     // DependenciesInjection
     implementation "com.google.dagger:dagger:$dagger_2_version"
     kapt "com.google.dagger:dagger-compiler:$dagger_2_version"
+
+    //Coroutine
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version"
+
+    // LifeCycle
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.5.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0"
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.0'
 }

@@ -10,15 +10,16 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.base_components.viewmodels.ViewModelFactory
+import androidx.lifecycle.ViewModelProvider
 import com.example.countriesapp.di.appComponent
+import com.example.countriesapp.ui.countryList.CountryListScreen
 import com.example.countriesapp.ui.theme.CountriesAppTheme
 import javax.inject.Inject
 
 class MainActivity : ComponentActivity() {
 
     @Inject
-    private lateinit var factory: ViewModelFactory
+    lateinit var factory: ViewModelProvider.Factory
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +31,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    CountryListScreen(factory = factory)
                 }
             }
         }

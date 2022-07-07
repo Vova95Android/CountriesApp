@@ -2,15 +2,20 @@ package com.example.countriesapp.di
 
 import android.app.Application
 import android.content.Context
-import com.example.countriesapp.MainActivity
 import com.example.countriesapp.MyApplication
+import com.example.countriesapp.ui.MainActivity
+import com.example.data.di.NetworkModule
+import com.example.data.di.RepositoryModule
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton
 
 @Singleton
 @Component(
-    modules = [ViewModelModule::class]
+    modules = [
+        ViewModelModule::class,
+        RepositoryModule::class
+    ]
 )
 interface AppComponent  {
 

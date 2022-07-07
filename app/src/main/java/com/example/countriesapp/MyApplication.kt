@@ -3,8 +3,6 @@ package com.example.countriesapp
 import android.app.Application
 import com.example.countriesapp.di.AppComponent
 import com.example.countriesapp.di.DaggerAppComponent
-import javax.inject.Inject
-import javax.inject.Named
 
 class MyApplication: Application() {
 
