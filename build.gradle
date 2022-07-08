@@ -6,6 +6,7 @@ buildscript {
         kotlin_version = "1.6.10"
         coroutine_version = "1.6.1"
         apollo_version = "3.3.2"
+        version_room = "2.3.0"
     }
     repositories {
         google()

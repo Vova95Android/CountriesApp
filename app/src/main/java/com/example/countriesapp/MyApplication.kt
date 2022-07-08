@@ -9,7 +9,7 @@ class MyApplication: Application() {
     lateinit var appComponent: AppComponent
 
     override fun onCreate() {
-        appComponent = DaggerAppComponent.builder().application(this).build()
+        appComponent = DaggerAppComponent.builder().application(this.applicationContext).build()
         super.onCreate()
     }
 }

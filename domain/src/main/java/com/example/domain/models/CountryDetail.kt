@@ -8,7 +8,7 @@ data class CountryDetail(
     val phone: String,
     val currency: String,
     val continent: String,
-    val languages: String,
+    val language: String,
     val listData: List<Pair<ContentData, String>>
 )
 
