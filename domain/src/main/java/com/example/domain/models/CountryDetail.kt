@@ -8,5 +8,15 @@ data class CountryDetail(
     val phone: String,
     val currency: String,
     val continent: String,
-    val languages: String
+    val languages: String,
+    val listData: List<Pair<ContentData, String>>
 )
+
+enum class ContentData {
+    Continent,
+    Capital,
+    Code,
+    Phone,
+    Currency,
+    Language
+}

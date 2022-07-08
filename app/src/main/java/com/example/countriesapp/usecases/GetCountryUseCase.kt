@@ -1,4 +1,4 @@
-package com.example.data.usecases
+package com.example.countriesapp.usecases
 
 import com.example.domain.common.Result
 import com.example.domain.models.CountriesItem
