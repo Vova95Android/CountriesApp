@@ -12,6 +12,8 @@ import javax.inject.Inject
 
 class CountryDetailRepositoryImpl @Inject constructor(
 //    private val client: ApolloClient
+//TODO I don't know why, but it don't compile "ComponentProcessingStep was unable to process 'com.example.countriesapp.di.AppComponent' because 'com.apollographql.apollo3.ApolloClient' could not be resolved."
+//TODO This is my first time working with apollo
 ) : CountryDetailRepository {
 
     override suspend fun getCountryDetail(code: String): Result<CountryDetail> {
