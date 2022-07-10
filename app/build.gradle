@@ -71,5 +71,5 @@ dependencies {
 
     // DependenciesInjection
     implementation "com.google.dagger:dagger:$dagger_2_version"
-    kapt "com.google.dagger:dagger-compiler:2.42"
+    kapt "com.google.dagger:dagger-compiler:$dagger_2_version"
 }

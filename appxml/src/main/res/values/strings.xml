@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">appXML</string>
+    <string name="app_name">CountriesApp</string>
+    <string name="text_info">Info</string>
+    <string name="text_continent">Continent</string>
+    <string name="text_capital">Capital</string>
+    <string name="text_code">Code</string>
+    <string name="text_phone">Phone</string>
+    <string name="text_currency">Currency</string>
+    <string name="text_language">Language</string>
+    <string name="text_countries">Countries</string>
+    <string name="text_search">Search</string>
 </resources>

@@ -4,15 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.activity.MainActivity"
+    android:background="@color/background">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_country_list"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:name="com.example.appxml.ui.countryList.CountryListFragment"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toStartOf="@id/fragment_country_detail"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_country_detail"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:name="com.example.appxml.ui.countryDetail.CountryDetailFragment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fragment_country_list"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

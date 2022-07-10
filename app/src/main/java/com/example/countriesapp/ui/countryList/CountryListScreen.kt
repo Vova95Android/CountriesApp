@@ -76,7 +76,7 @@ fun CountryListScreen(
                         colorResource(id = R.color.middle_grey),
                         RoundedCornerShape(100.dp)
                     ),
-                label = { Text(text = "Search") },
+                label = { Text(text = stringResource(id = R.string.text_search)) },
                 trailingIcon = {
                     Image(
                         painter = painterResource(id = R.drawable.ic_search),

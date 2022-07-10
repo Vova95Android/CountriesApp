@@ -1,11 +1,12 @@
 <resources>
-    <string name="app_name">CountriesApp</string>
-    <string name="text_info">Info</string>
-    <string name="text_continent">Continent</string>
-    <string name="text_capital">Capital</string>
-    <string name="text_code">Code</string>
-    <string name="text_phone">Phone</string>
-    <string name="text_currency">Currency</string>
-    <string name="text_language">Language</string>
-    <string name="text_countries">Countries</string>
+    <string name="app_name" translatable="false">CountriesApp</string>
+    <string name="text_info" translatable="false">Info</string>
+    <string name="text_continent" translatable="false">Continent</string>
+    <string name="text_capital" translatable="false">Capital</string>
+    <string name="text_code" translatable="false">Code</string>
+    <string name="text_phone" translatable="false">Phone</string>
+    <string name="text_currency" translatable="false">Currency</string>
+    <string name="text_language" translatable="false">Language</string>
+    <string name="text_countries" translatable="false">Countries</string>
+    <string name="text_search" translatable="false">Search</string>
 </resources>

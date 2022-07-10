@@ -18,6 +18,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.countriesapp.R
 import com.example.countriesapp.di.appComponent
+import com.example.countriesapp.ui.countryDetail.CountryDetailScreen
 import com.example.countriesapp.ui.countryList.CountryListScreen
 import com.example.countriesapp.ui.theme.CountriesAppTheme
 import javax.inject.Inject
